@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: "Oswald", sans-serif;
+    min-height: 100vh;
+}
+
+/* Navegación */
+#navegacion {
+    background-color: #aed6f1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo navegación */
+.logo {
+    border-radius: 50%;
+}
+
+.title-amantti {
+    font-size: 1rem;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.navbar-nav {
+    display: flex;
+    font-size: 8.7px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+/* Logo image index */
+.img-small {
+    max-width: 200px;
+    height: auto;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+/* Estilos del contenedor */
+.container {
+    padding-top: 100px;
+}
+
+/* Estilos para el ícono del ojo */
+.password-toggle {
+    color: #888;
+    transition: color 0.3s;
+}
+
+.password-toggle:hover {
+    color: #007bff;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-toggle.fa {
+    font-size: 1.25em;
+}
+
+/* Estilos para el input del textarea */
+textarea {
+    resize: none;
+    height: 20px;
+}

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: "Oswald", sans-serif;
+    min-height: 100vh;
+}
+
+/* Navegación */
+#navegacion {
+    background-color: #aed6f1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+section.my-5 {
+    padding-top: 70px;
+}
+
+.title-amantti {
+    font-size: 2rem;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.navbar-nav {
+    display: flex;
+    font-size: 11px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+/* Distribución de las tarjetas de productos */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos de tarjeta */
+.card-container {
+    flex: 0 0 24%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 10px 8px 8px 10px rgba(12, 8, 8, 0.8);
+    transition: transform 0.3s;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+/* Títulos e información de los productos */
+.product-title {
+    font-size: 16.1px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-info {
+    font-size: 14px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    text-align: center;
+    overflow: auto;
+    max-height: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
+}
+
+.btn-primary i {
+    margin-right: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .fa-2xl {
+    color: #000;
+    transition: color 0.3s;
+}
+
+footer .fa-2xl:hover {
+    color: #dc3545;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card-container {
+        flex: 0 0 48%;
+        margin: 25px;
+        padding: 25px;
+    }
+
+    footer .col-md-4,
+    footer .row {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    footer .d-flex {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .d-flex.align-items-center {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .fa-2xl {
+        font-size: 1.5rem;
+    }
+}

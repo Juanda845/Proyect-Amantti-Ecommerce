@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: "Oswald", sans-serif;
+}
+
+/* Logo */
+.image-logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Estilos para el ícono del ojo */
+.password-toggle {
+    color: #888;
+    transition: color 0.3s;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(30%);
+    cursor: pointer;
+}
+
+.password-toggle:hover {
+    color: #007bff;
+}
+
+.password-toggle.fa {
+    font-size: 1.25em;
+}

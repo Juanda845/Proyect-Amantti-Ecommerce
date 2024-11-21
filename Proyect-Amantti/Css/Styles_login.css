@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: "Oswald", sans-serif;
+    overflow: hidden;
+}
+
+/* Logo */
+.image-logo {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Estilos para inputs y botón */
+input, button {
+    font-size: 1rem;
+    padding: 8px;
+}
+
+/* Estilos para el ícono del ojo */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.password-toggle:hover {
+    color: #007bff;
+}
+
+/* Card */
+.card {
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    max-width: 450px; 
+    margin: 0 auto; 
+    display: flex;
+}
+
+/* Título */
+h2 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Subtítulo */
+h5 {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem; 
+    margin-bottom: 20px;
+}
+
+/* Botón de iniciar sesión */
+button {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Texto de registro */
+p {
+    margin-top: 10px;
+    color: black;
+    font-size: 1rem; 
+}
+
+/* Ajustes de margen para reducir el espacio general */
+input, button {
+    margin-top: 10px;
+}

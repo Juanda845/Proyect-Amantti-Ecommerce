@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: "Oswald", sans-serif;
+    min-height: 100vh;
+}
+
+/* Navegación */
+#navegacion {
+    background-color: #aed6f1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+section.my-5 {
+    padding-top: 70px;
+}
+
+.title-amantti {
+    font-size: 2rem;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.navbar-nav {
+    display: flex;
+    font-size: 11px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+/* Estilos card visualización previa producto */
+.container-titles {
+    gap: 6.3rem;
+}
+
+.img-product {
+    width: 96px;
+    height: 96px;
+}
+
+.input-calculo {
+    width: 100px;
+}
+
+/* Estilos card visualización de precios y metodo de compra */
+#carrito {
+    max-height: calc(81vh - 146px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.product-description {
+    width: 160px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-1 {
+    background-color: #fbff00;
+}
+
+.btn-2 {
+    background-color: #5dc3ff;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .fa-2xl {
+    color: #000;
+    transition: color 0.3s;
+}
+
+footer .fa-2xl:hover {
+    color: #dc3545;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    .card.border.border-dark-subtle.shadow-0 {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .col-md-3.sm-mt-2 .card {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    footer .col-md-4,
+    footer .row {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    footer .d-flex {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .d-flex.align-items-center {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .fa-2xl {
+        font-size: 1.5rem;
+    }
+}
